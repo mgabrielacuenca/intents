@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="INTENTS"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/itExplicita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:onClick="OnClickExplicita"
+        android:text="Intent Explícita" />
+
+    <Button
+        android:id="@+id/itLigar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itExplicita"
+        android:onClick="OnClickLigar"
+        android:text="Ligar" />
+
+    <Button
+        android:id="@+id/itContato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itLigar"
+        android:onClick="OnClickContato"
+        android:text="Contatos" />
+
+    <Button
+        android:id="@+id/itAlarme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itContato"
+        android:onClick="OnClickAlarme"
+        android:text="Alarme" />
+
+    <Button
+        android:id="@+id/itBuscarContato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itAlarme"
+        android:onClick="OnClickBuscarContato"
+        android:text="Buscar Contato" />
+
+    <Button
+        android:id="@+id/itMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itBuscarContato"
+        android:onClick="OnClickMapa"
+        android:text="Mapa" />
+
+    <Button
+        android:id="@+id/itCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itMapa"
+        android:onClick="OnClickCamera"
+        android:text="Câmera" />
+
+    <Button
+        android:id="@+id/itEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itCamera"
+        android:onClick="OnClickEmail"
+        android:text="Enviar Email" />
+
+    <Button
+        android:id="@+id/itFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itEmail"
+        android:onClick="OnClickFilter"
+        android:text="Intent Filter" />
+</RelativeLayout>
